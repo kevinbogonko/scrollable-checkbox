@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<body>
+
+    <div id="list1" class="dropdown-check-list" tabindex="100">
+        <span class="anchor">Select Fruits</span>
+        <ul class="items">
+            <li><input type="checkbox" />Apple </li>
+            <li><input type="checkbox" />Orange</li>
+            <li><input type="checkbox" />Grapes </li>
+            <li><input type="checkbox" />Berry </li>
+            <li><input type="checkbox" />Mango </li>
+            <li><input type="checkbox" />Banana </li>
+            <li><input type="checkbox" />Tomato</li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+
+        var checkList = document.getElementById('list1');
+        checkList.getElementsByClassName('anchor')[0].onclick = function (evt) {
+            if (checkList.classList.contains('visible'))
+                checkList.classList.remove('visible');
+            else
+                 checkList.classList.add('visible');
+        }
+    </script>
+
+
+
+	<script src="index.js"></script>
+  </body>
+</html>
